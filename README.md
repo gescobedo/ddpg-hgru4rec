@@ -3,7 +3,7 @@ DDPG-hgru4rec
 
 Source Code generated during Masters Studies
 
-This repository includes a Pytorch implementation of the hgru4rec architechture as close as possible to the [original implementation](https://github.com/mquad/hgru4rec)
+This repository includes a Pytorch implementation of the hgru4rec architecture as close as possible to the [original implementation](https://github.com/mquad/hgru4rec) and an adaptation of the Deep Deterministic Policy Gradient Algorithm to adjust the hidden state of the intra-session level network by introducing inter-session based perturbations.  
 
 
 Requirements
