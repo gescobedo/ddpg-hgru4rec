@@ -196,9 +196,7 @@ class BPRMaxLoss(nn.Module):
         #                                                           +self.bpreg*T.sum((yhat**2)*softmax_scores, axis=1))
         loss = torch.sum((-F.logsigmoid(diff) + self.bpreg * logit**2) * softmax_scores, 1).mean()
 
-        #if torch.isnan(loss):
-        #    import pdb
-        #    pdb.set_trace()
+       
         return loss
 
 class PGLoss(nn.Module):
