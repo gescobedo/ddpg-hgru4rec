@@ -71,7 +71,7 @@ parser.add_argument('--lambda_reg', type=float, default=0.01)
 
 args = parser.parse_args()
 
-data_home = '/media/gustavo/Storage2/Datasets'
+data_home = '../Datasets'
 if args.dataset == 'Tianchi-raw-full':
     prefix = 'Tianchi/raw-full'
 elif args.dataset == 'Tianchi-raw-small':
@@ -144,9 +144,9 @@ n_items = len(test_data.items)
 import torch
 #torch.set_num_threads(10)
 torch.manual_seed(args.rnd_seed)
-MODELS_PATH_ENV= '/media/gustavo/Storage2/Models/hgru4rec/'
-MODELS_PATH_APR= '/media/gustavo/Storage2/Models/hgru4rec-apr'
-MODELS_PATH= '/media/gustavo/Storage/gustavo/repository/icmc-mestrado-code/models/'
+MODELS_PATH_ENV= '../Models/hgru4rec/'
+MODELS_PATH_APR= '../Models/hgru4rec-apr'
+MODELS_PATH= '../Models/'
 
 t0 = dt.now()
 logger.info('Training started')

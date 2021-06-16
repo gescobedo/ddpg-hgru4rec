@@ -82,7 +82,7 @@ parser.add_argument('--rl_model_name', type=str, default=None)
 parser.add_argument('--reset_buffer_limit', type=int, default=-1)
 parser.add_argument('--custom_file', type=str, default='')
 args = parser.parse_args()
-data_home = '/media/gustavo/Storage2/Datasets'
+data_home = '../Datasets'
 if args.dataset == 'Tianchi-raw-full':
     prefix = 'Tianchi/raw-full'
 elif args.dataset == 'Tianchi-raw-small':
